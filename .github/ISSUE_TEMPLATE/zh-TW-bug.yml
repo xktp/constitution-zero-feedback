@@ -1,0 +1,45 @@
+name: '[zh-TW] 問題回報'
+description: 描述遇到的問題與重現方式。
+title: '[Bug][zh-TW] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件會公開顯示。請勿填寫密碼、權杖、個人資訊或機密資料。安全漏洞和私密回饋請改用電子郵件。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部語言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開頁面或文件及版本
+      description: 請提供公開連結，或文件名稱、章節與已知版本。移除私密識別資訊與查詢參數。
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: 實際發生了什麼？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      description: 描述你的操作過程；無法重現時請說明。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你預期發生什麼？
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 瀏覽器、裝置與相關設定（選填）
+      description: 例如瀏覽器版本、字級、鍵盤或相關輔助科技。無須提供醫療或個人資料。
+    validations:
+      required: false

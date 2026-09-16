@@ -1,0 +1,38 @@
+name: '[ru] Исправить текст или ссылку'
+description: Предложите исправление текста исследования, источника или цитаты.
+title: '[Correction][ru] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Задачи и вложения видны всем. Не публикуйте пароли, токены, персональные или конфиденциальные данные. Об уязвимостях и частных вопросах сообщайте по электронной почте.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Все языки](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Публичная страница или документ и версия
+      description: Укажите публичный URL или название, раздел и известную версию документа. Удалите закрытые
+        идентификаторы и параметры запроса.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Текст или ссылка, которые нужно исправить
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предлагаемое исправление и причина
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Публичные источники или пояснение (необязательно)
+    validations:
+      required: false

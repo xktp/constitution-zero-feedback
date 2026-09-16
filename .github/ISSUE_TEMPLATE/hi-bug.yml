@@ -1,0 +1,47 @@
+name: '[hi] समस्या की रिपोर्ट'
+description: समस्या और उसे दोहराने का तरीका बताएँ।
+title: '[Bug][hi] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue और संलग्न फ़ाइलें सार्वजनिक होती हैं। पासवर्ड, टोकन, व्यक्तिगत या गोपनीय जानकारी शामिल न करें। सुरक्षा संबंधी कमज़ोरियाँ और निजी प्रतिक्रिया ईमेल से भेजें।
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [सभी भाषाएँ](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: सार्वजनिक पृष्ठ या दस्तावेज़ और संस्करण
+      description: सार्वजनिक URL या दस्तावेज़ का नाम, अनुभाग और ज्ञात संस्करण दें। निजी पहचान संबंधी जानकारी
+        और क्वेरी पैरामीटर हटा दें।
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: क्या हुआ?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: समस्या दोहराने के चरण
+      description: बताएँ कि आपने क्या किया। यदि समस्या दोहरा नहीं सकते, तो यह भी बताएँ।
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: आपको क्या होने की उम्मीद थी?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: ब्राउज़र, उपकरण और संबंधित सेटिंग (वैकल्पिक)
+      description: जैसे ब्राउज़र का संस्करण, अक्षरों का आकार, कीबोर्ड या सहायक तकनीक। चिकित्सा या व्यक्तिगत
+        जानकारी साझा न करें।
+    validations:
+      required: false

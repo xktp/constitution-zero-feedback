@@ -1,0 +1,47 @@
+name: '[de] Fehler melden'
+description: Beschreibe den Fehler und wie er sich reproduzieren lässt.
+title: '[Bug][de] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issues und Anhänge sind öffentlich. Veröffentliche keine Passwörter, Tokens, personenbezogenen oder vertraulichen Daten. Melde Sicherheitslücken und vertrauliche Anliegen per E-Mail.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Alle Sprachen](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Öffentliche Seite oder Dokument und Version
+      description: Nenne eine öffentliche URL oder Titel, Abschnitt und bekannte Version des Dokuments.
+        Entferne private Kennungen und Abfrageparameter.
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: Was ist passiert?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      description: Beschreibe dein Vorgehen. Gib an, wenn sich der Fehler nicht reproduzieren lässt.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Was hast du erwartet?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser, Gerät und relevante Einstellungen (optional)
+      description: Zum Beispiel Browserversion, Schriftgröße, Tastatur oder assistive Technik. Keine medizinischen
+        oder persönlichen Angaben erforderlich.
+    validations:
+      required: false

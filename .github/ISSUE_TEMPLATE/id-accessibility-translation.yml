@@ -1,0 +1,50 @@
+name: '[id] Aksesibilitas atau terjemahan'
+description: Laporkan hambatan akses atau masalah terjemahan.
+title: '[Accessibility/Translation][id] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue dan lampiran bersifat publik. Jangan sertakan kata sandi, token, data pribadi, atau informasi rahasia. Kirim kerentanan keamanan dan umpan balik pribadi melalui email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Semua bahasa](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Halaman publik atau dokumen dan versi
+      description: Sertakan URL publik atau judul, bagian, dan versi dokumen jika diketahui. Hapus pengenal
+        pribadi dan parameter kueri.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Jenis umpan balik
+      options:
+        - Aksesibilitas
+        - Terjemahan
+        - Keduanya
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Hambatan atau masalah terjemahan
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Redaksi atau perilaku aksesibel yang diharapkan
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Peramban, perangkat, dan pengaturan terkait (opsional)
+      description: Misalnya versi peramban, ukuran teks, papan ketik, atau teknologi bantu terkait. Jangan
+        bagikan data medis atau pribadi.
+    validations:
+      required: false

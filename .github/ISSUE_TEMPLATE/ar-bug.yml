@@ -1,0 +1,47 @@
+name: '[ar] الإبلاغ عن مشكلة'
+description: صِف المشكلة وطريقة إعادة حدوثها.
+title: '[Bug][ar] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        البلاغات والمرفقات علنية. لا تنشر كلمات المرور أو رموز الوصول أو البيانات الشخصية أو السرية. أرسل الثغرات الأمنية والملاحظات الخاصة عبر البريد الإلكتروني.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [جميع اللغات](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: الصفحة العامة أو الوثيقة وإصدارها
+      description: أدرج رابطًا عامًا أو عنوان الوثيقة وقسمها وإصدارها إن عُرف. احذف المعرّفات الخاصة ومعلمات
+        الاستعلام.
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: ماذا حدث؟
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: خطوات إعادة حدوث المشكلة
+      description: صِف ما فعلته. إذا لم تستطع إعادة حدوث المشكلة، فاذكر ذلك.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ما النتيجة التي توقعتها؟
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: المتصفح والجهاز والإعدادات ذات الصلة (اختياري)
+      description: مثل إصدار المتصفح وحجم النص ولوحة المفاتيح أو التقنية المساعدة ذات الصلة. لا تشارك
+        بيانات طبية أو شخصية.
+    validations:
+      required: false

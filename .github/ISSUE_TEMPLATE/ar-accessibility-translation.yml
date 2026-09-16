@@ -1,0 +1,50 @@
+name: '[ar] إمكانية الوصول أو الترجمة'
+description: أبلغ عن عائق في الوصول أو مشكلة في الترجمة.
+title: '[Accessibility/Translation][ar] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        البلاغات والمرفقات علنية. لا تنشر كلمات المرور أو رموز الوصول أو البيانات الشخصية أو السرية. أرسل الثغرات الأمنية والملاحظات الخاصة عبر البريد الإلكتروني.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [جميع اللغات](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: الصفحة العامة أو الوثيقة وإصدارها
+      description: أدرج رابطًا عامًا أو عنوان الوثيقة وقسمها وإصدارها إن عُرف. احذف المعرّفات الخاصة ومعلمات
+        الاستعلام.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: نوع الملاحظة
+      options:
+        - إمكانية الوصول
+        - الترجمة
+        - كلاهما
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: عائق الوصول أو مشكلة الترجمة
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: الصياغة المتوقعة أو السلوك الذي يتيح الوصول
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: المتصفح والجهاز والإعدادات ذات الصلة (اختياري)
+      description: مثل إصدار المتصفح وحجم النص ولوحة المفاتيح أو التقنية المساعدة ذات الصلة. لا تشارك
+        بيانات طبية أو شخصية.
+    validations:
+      required: false

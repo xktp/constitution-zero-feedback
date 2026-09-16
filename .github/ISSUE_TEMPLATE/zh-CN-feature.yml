@@ -1,0 +1,37 @@
+name: '[zh-CN] 功能建议'
+description: 说明需求并提出改进建议。
+title: '[Feature][zh-CN] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件会公开显示。请勿填写密码、令牌、个人信息或保密资料。安全漏洞和私密反馈请改用邮箱。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部语言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公开页面或文档及版本
+      description: 请提供公开链接，或文档名称、章节及已知版本。移除私密标识和查询参数。
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: 这个建议要解决什么需求？
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 建议如何改进？
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 谁会受益，以及如何受益？（选填）
+    validations:
+      required: false

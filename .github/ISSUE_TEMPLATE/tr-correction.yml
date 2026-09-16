@@ -1,0 +1,38 @@
+name: '[tr] İçerik veya alıntı düzeltmesi'
+description: Araştırma metni, kaynak veya alıntı için düzeltme önerin.
+title: '[Correction][tr] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue’lar ve ekler herkese açıktır. Parola, erişim belirteci, kişisel veri veya gizli bilgi paylaşmayın. Güvenlik açıklarını ve özel geri bildirimleri e-postayla gönderin.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Tüm diller](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Herkese açık sayfa veya belge ve sürümü
+      description: Herkese açık URL ya da belgenin adı, bölümü ve bilinen sürümünü belirtin. Özel tanımlayıcıları
+        ve sorgu parametrelerini kaldırın.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Düzeltilmesi gereken metin veya alıntı
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerilen düzeltme ve gerekçesi
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Herkese açık kaynaklar veya ek açıklama (isteğe bağlı)
+    validations:
+      required: false

@@ -1,0 +1,50 @@
+name: '[it] Accessibilità o traduzione'
+description: Segnala una barriera di accesso o un problema di traduzione.
+title: '[Accessibility/Translation][it] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Le issue e gli allegati sono pubblici. Non includere password, token, dati personali o informazioni riservate. Invia vulnerabilità di sicurezza e segnalazioni private via email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Tutte le lingue](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Pagina pubblica o documento e versione
+      description: Indica un URL pubblico o titolo, sezione e versione del documento, se noti. Rimuovi
+        identificatori privati e parametri di query.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Tipo di feedback
+      options:
+        - Accessibilità
+        - Traduzione
+        - Entrambe
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Barriera o problema di traduzione
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Formulazione o comportamento accessibile atteso
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser, dispositivo e impostazioni rilevanti (facoltativo)
+      description: Ad esempio versione del browser, dimensione del testo, tastiera o tecnologia assistiva.
+        Non condividere dati medici o personali.
+    validations:
+      required: false

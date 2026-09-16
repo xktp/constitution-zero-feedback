@@ -1,0 +1,47 @@
+name: '[es] Informar de un error'
+description: Describe el problema y cómo reproducirlo.
+title: '[Bug][es] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Las incidencias y los archivos adjuntos son públicos. No incluyas contraseñas, tokens, datos personales ni información confidencial. Envía las vulnerabilidades y los comentarios privados por correo electrónico.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Todos los idiomas](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Página pública o documento y versión
+      description: Incluye una URL pública o el título, la sección y la versión del documento, si los
+        conoces. Elimina identificadores privados y parámetros de consulta.
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: ¿Qué ocurrió?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      description: Describe lo que hiciste. Si no puedes reproducirlo, indícalo.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ¿Qué esperabas que ocurriera?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Navegador, dispositivo y ajustes relevantes (opcional)
+      description: Por ejemplo, versión del navegador, tamaño de texto, teclado o tecnología de asistencia.
+        No compartas datos médicos ni personales.
+    validations:
+      required: false

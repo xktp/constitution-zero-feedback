@@ -1,0 +1,47 @@
+name: '[it] Segnalare un problema'
+description: Descrivi il problema e come riprodurlo.
+title: '[Bug][it] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Le issue e gli allegati sono pubblici. Non includere password, token, dati personali o informazioni riservate. Invia vulnerabilità di sicurezza e segnalazioni private via email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Tutte le lingue](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Pagina pubblica o documento e versione
+      description: Indica un URL pubblico o titolo, sezione e versione del documento, se noti. Rimuovi
+        identificatori privati e parametri di query.
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: Che cosa è successo?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passaggi per riprodurre il problema
+      description: Descrivi le azioni svolte. Se non riesci a riprodurre il problema, specificalo.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Che cosa ti aspettavi?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser, dispositivo e impostazioni rilevanti (facoltativo)
+      description: Ad esempio versione del browser, dimensione del testo, tastiera o tecnologia assistiva.
+        Non condividere dati medici o personali.
+    validations:
+      required: false

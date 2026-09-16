@@ -1,0 +1,38 @@
+name: '[tr] Özellik önerisi'
+description: İhtiyacı açıklayın ve bir iyileştirme önerin.
+title: '[Feature][tr] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue’lar ve ekler herkese açıktır. Parola, erişim belirteci, kişisel veri veya gizli bilgi paylaşmayın. Güvenlik açıklarını ve özel geri bildirimleri e-postayla gönderin.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Tüm diller](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Herkese açık sayfa veya belge ve sürümü
+      description: Herkese açık URL ya da belgenin adı, bölümü ve bilinen sürümünü belirtin. Özel tanımlayıcıları
+        ve sorgu parametrelerini kaldırın.
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Bu öneri hangi ihtiyacı karşılıyor?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerilen iyileştirme
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Kim, nasıl yararlanır? (isteğe bağlı)
+    validations:
+      required: false

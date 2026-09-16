@@ -1,0 +1,37 @@
+name: '[ja] 内容・引用の訂正'
+description: 研究本文、出典、引用の訂正を提案してください。
+title: '[Correction][ja] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue と添付ファイルは公開されます。パスワード、トークン、個人情報、機密情報を記載しないでください。セキュリティ上の脆弱性や非公開の相談はメールでお送りください。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [すべての言語](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開ページまたは文書とバージョン
+      description: 公開 URL、または文書名・節・分かる範囲のバージョンを記載してください。非公開の識別情報やクエリパラメーターは除いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 訂正が必要な本文または引用
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 訂正案とその理由
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 公開されている出典や補足説明（任意）
+    validations:
+      required: false

@@ -1,0 +1,48 @@
+name: '[ko] 접근성 또는 번역'
+description: 접근성 장벽이나 번역 문제를 알려 주세요.
+title: '[Accessibility/Translation][ko] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue와 첨부 파일은 공개됩니다. 비밀번호, 토큰, 개인정보 또는 기밀 자료를 포함하지 마세요. 보안 취약점과 비공개 의견은 이메일로 보내 주세요.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [모든 언어](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 공개 페이지 또는 문서와 버전
+      description: 공개 URL이나 문서 제목, 절, 알고 있는 버전을 적어 주세요. 비공개 식별 정보와 쿼리 매개변수는 제거해 주세요.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 의견 유형
+      options:
+        - 접근성
+        - 번역
+        - 둘 다
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: 접근성 장벽 또는 번역 문제
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대하는 표현 또는 접근 가능한 동작
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 브라우저, 기기 및 관련 설정 (선택)
+      description: '예: 브라우저 버전, 글자 크기, 키보드 또는 관련 보조 기술. 의료 정보나 개인정보는 필요하지 않습니다.'
+    validations:
+      required: false

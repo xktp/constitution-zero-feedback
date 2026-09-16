@@ -1,0 +1,38 @@
+name: '[en] Content or citation correction'
+description: Correct research text, a source or a citation.
+title: '[Correction][en] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issues and attachments are public. Do not include passwords, tokens, personal information or confidential data. Send security vulnerabilities and private feedback by email instead.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [All languages](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Public page or document and version
+      description: Include a public URL or document title, section and version if known. Remove private
+        identifiers and query parameters.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Text or citation to correct
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested correction and reason
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources or supporting explanation (optional)
+    validations:
+      required: false

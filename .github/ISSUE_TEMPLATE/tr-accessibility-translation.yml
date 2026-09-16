@@ -1,0 +1,50 @@
+name: '[tr] Erişilebilirlik veya çeviri'
+description: Erişim engeli veya çeviri sorunu bildirin.
+title: '[Accessibility/Translation][tr] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue’lar ve ekler herkese açıktır. Parola, erişim belirteci, kişisel veri veya gizli bilgi paylaşmayın. Güvenlik açıklarını ve özel geri bildirimleri e-postayla gönderin.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Tüm diller](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Herkese açık sayfa veya belge ve sürümü
+      description: Herkese açık URL ya da belgenin adı, bölümü ve bilinen sürümünü belirtin. Özel tanımlayıcıları
+        ve sorgu parametrelerini kaldırın.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Geri bildirim türü
+      options:
+        - Erişilebilirlik
+        - Çeviri
+        - Her ikisi
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Erişim engeli veya çeviri sorunu
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen ifade veya erişilebilir davranış
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Tarayıcı, cihaz ve ilgili ayarlar (isteğe bağlı)
+      description: Örneğin tarayıcı sürümü, metin boyutu, klavye veya yardımcı teknoloji. Tıbbi ya da
+        kişisel bilgi paylaşmayın.
+    validations:
+      required: false

@@ -1,0 +1,38 @@
+name: '[hi] सामग्री या उद्धरण में सुधार'
+description: शोध के पाठ, स्रोत या उद्धरण में सुधार सुझाएँ।
+title: '[Correction][hi] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue और संलग्न फ़ाइलें सार्वजनिक होती हैं। पासवर्ड, टोकन, व्यक्तिगत या गोपनीय जानकारी शामिल न करें। सुरक्षा संबंधी कमज़ोरियाँ और निजी प्रतिक्रिया ईमेल से भेजें।
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [सभी भाषाएँ](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: सार्वजनिक पृष्ठ या दस्तावेज़ और संस्करण
+      description: सार्वजनिक URL या दस्तावेज़ का नाम, अनुभाग और ज्ञात संस्करण दें। निजी पहचान संबंधी जानकारी
+        और क्वेरी पैरामीटर हटा दें।
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: वह पाठ या उद्धरण जिसमें सुधार चाहिए
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: सुझाया गया सुधार और उसका कारण
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: सार्वजनिक स्रोत या अतिरिक्त विवरण (वैकल्पिक)
+    validations:
+      required: false

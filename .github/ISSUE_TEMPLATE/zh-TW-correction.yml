@@ -1,0 +1,37 @@
+name: '[zh-TW] 內容或引用更正'
+description: 更正研究內容、來源或引用。
+title: '[Correction][zh-TW] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件會公開顯示。請勿填寫密碼、權杖、個人資訊或機密資料。安全漏洞和私密回饋請改用電子郵件。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部語言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開頁面或文件及版本
+      description: 請提供公開連結，或文件名稱、章節與已知版本。移除私密識別資訊與查詢參數。
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 需要更正的原文或引用
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建議更正內容與原因
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 公開來源或補充說明（選填）
+    validations:
+      required: false

@@ -1,0 +1,45 @@
+name: '[ja] 不具合の報告'
+description: 問題と再現方法を説明してください。
+title: '[Bug][ja] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue と添付ファイルは公開されます。パスワード、トークン、個人情報、機密情報を記載しないでください。セキュリティ上の脆弱性や非公開の相談はメールでお送りください。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [すべての言語](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開ページまたは文書とバージョン
+      description: 公開 URL、または文書名・節・分かる範囲のバージョンを記載してください。非公開の識別情報やクエリパラメーターは除いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: 何が起きましたか？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 行った操作を説明してください。再現できない場合は、その旨を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: どのような結果を期待していましたか？
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: ブラウザー、端末、関連設定（任意）
+      description: 例：ブラウザーのバージョン、文字サイズ、キーボード、関連する支援技術。医療情報や個人情報は不要です。
+    validations:
+      required: false

@@ -1,0 +1,50 @@
+name: '[ru] Доступность или перевод'
+description: Сообщите о барьере доступности или проблеме перевода.
+title: '[Accessibility/Translation][ru] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Задачи и вложения видны всем. Не публикуйте пароли, токены, персональные или конфиденциальные данные. Об уязвимостях и частных вопросах сообщайте по электронной почте.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Все языки](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Публичная страница или документ и версия
+      description: Укажите публичный URL или название, раздел и известную версию документа. Удалите закрытые
+        идентификаторы и параметры запроса.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип обращения
+      options:
+        - Доступность
+        - Перевод
+        - Оба варианта
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Барьер доступности или проблема перевода
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемая формулировка или доступное поведение
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Браузер, устройство и важные настройки (необязательно)
+      description: Например, версия браузера, размер текста, клавиатура или вспомогательные технологии.
+        Не сообщайте медицинские или персональные данные.
+    validations:
+      required: false

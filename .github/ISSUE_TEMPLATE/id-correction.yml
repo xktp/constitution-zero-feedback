@@ -1,0 +1,38 @@
+name: '[id] Koreksi konten atau kutipan'
+description: Koreksi teks penelitian, sumber, atau kutipan.
+title: '[Correction][id] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue dan lampiran bersifat publik. Jangan sertakan kata sandi, token, data pribadi, atau informasi rahasia. Kirim kerentanan keamanan dan umpan balik pribadi melalui email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Semua bahasa](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Halaman publik atau dokumen dan versi
+      description: Sertakan URL publik atau judul, bagian, dan versi dokumen jika diketahui. Hapus pengenal
+        pribadi dan parameter kueri.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Teks atau kutipan yang perlu diperbaiki
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Usulan koreksi dan alasannya
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sumber publik atau penjelasan tambahan (opsional)
+    validations:
+      required: false

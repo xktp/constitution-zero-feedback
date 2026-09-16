@@ -1,0 +1,47 @@
+name: '[id] Laporkan masalah'
+description: Jelaskan masalah dan cara mengulanginya.
+title: '[Bug][id] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue dan lampiran bersifat publik. Jangan sertakan kata sandi, token, data pribadi, atau informasi rahasia. Kirim kerentanan keamanan dan umpan balik pribadi melalui email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Semua bahasa](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Halaman publik atau dokumen dan versi
+      description: Sertakan URL publik atau judul, bagian, dan versi dokumen jika diketahui. Hapus pengenal
+        pribadi dan parameter kueri.
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: Apa yang terjadi?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah untuk mengulangi masalah
+      description: Jelaskan tindakan Anda. Jika masalah tidak dapat diulangi, sampaikan hal tersebut.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Apa yang Anda harapkan?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Peramban, perangkat, dan pengaturan terkait (opsional)
+      description: Misalnya versi peramban, ukuran teks, papan ketik, atau teknologi bantu terkait. Jangan
+        bagikan data medis atau pribadi.
+    validations:
+      required: false

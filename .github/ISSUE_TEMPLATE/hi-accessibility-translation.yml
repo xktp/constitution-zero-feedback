@@ -1,0 +1,50 @@
+name: '[hi] सुगम्यता या अनुवाद'
+description: पहुँच में बाधा या अनुवाद की समस्या बताएँ।
+title: '[Accessibility/Translation][hi] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue और संलग्न फ़ाइलें सार्वजनिक होती हैं। पासवर्ड, टोकन, व्यक्तिगत या गोपनीय जानकारी शामिल न करें। सुरक्षा संबंधी कमज़ोरियाँ और निजी प्रतिक्रिया ईमेल से भेजें।
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [सभी भाषाएँ](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: सार्वजनिक पृष्ठ या दस्तावेज़ और संस्करण
+      description: सार्वजनिक URL या दस्तावेज़ का नाम, अनुभाग और ज्ञात संस्करण दें। निजी पहचान संबंधी जानकारी
+        और क्वेरी पैरामीटर हटा दें।
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: प्रतिक्रिया का प्रकार
+      options:
+        - सुगम्यता
+        - अनुवाद
+        - दोनों
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: पहुँच में बाधा या अनुवाद की समस्या
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: अपेक्षित शब्दावली या सुगम व्यवहार
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: ब्राउज़र, उपकरण और संबंधित सेटिंग (वैकल्पिक)
+      description: जैसे ब्राउज़र का संस्करण, अक्षरों का आकार, कीबोर्ड या सहायक तकनीक। चिकित्सा या व्यक्तिगत
+        जानकारी साझा न करें।
+    validations:
+      required: false

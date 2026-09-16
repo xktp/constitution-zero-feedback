@@ -1,0 +1,38 @@
+name: '[pt-BR] Corrigir conteúdo ou citação'
+description: Corrija um texto de pesquisa, uma fonte ou uma citação.
+title: '[Correction][pt-BR] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        As issues e os anexos são públicos. Não inclua senhas, tokens, dados pessoais ou informações confidenciais. Envie vulnerabilidades de segurança e relatos privados por e-mail.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Todos os idiomas](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Página pública ou documento e versão
+      description: Informe uma URL pública ou o título, a seção e a versão do documento, se souber. Remova
+        identificadores privados e parâmetros de consulta.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: Texto ou citação a corrigir
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Correção sugerida e motivo
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Fontes públicas ou explicação adicional (opcional)
+    validations:
+      required: false

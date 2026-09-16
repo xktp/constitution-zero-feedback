@@ -1,0 +1,48 @@
+name: '[zh-TW] 無障礙或翻譯回饋'
+description: 回報使用障礙或翻譯問題。
+title: '[Accessibility/Translation][zh-TW] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件會公開顯示。請勿填寫密碼、權杖、個人資訊或機密資料。安全漏洞和私密回饋請改用電子郵件。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部語言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開頁面或文件及版本
+      description: 請提供公開連結，或文件名稱、章節與已知版本。移除私密識別資訊與查詢參數。
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 回饋類型
+      options:
+        - 無障礙
+        - 翻譯
+        - 兩者皆有
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: 使用障礙或翻譯問題
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期的表述或無障礙操作效果
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 瀏覽器、裝置與相關設定（選填）
+      description: 例如瀏覽器版本、字級、鍵盤或相關輔助科技。無須提供醫療或個人資料。
+    validations:
+      required: false

@@ -1,0 +1,38 @@
+name: '[ar] تصحيح محتوى أو استشهاد'
+description: اقترح تصحيحًا لنص بحثي أو مصدر أو استشهاد.
+title: '[Correction][ar] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        البلاغات والمرفقات علنية. لا تنشر كلمات المرور أو رموز الوصول أو البيانات الشخصية أو السرية. أرسل الثغرات الأمنية والملاحظات الخاصة عبر البريد الإلكتروني.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [جميع اللغات](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: الصفحة العامة أو الوثيقة وإصدارها
+      description: أدرج رابطًا عامًا أو عنوان الوثيقة وقسمها وإصدارها إن عُرف. احذف المعرّفات الخاصة ومعلمات
+        الاستعلام.
+    validations:
+      required: false
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: النص أو الاستشهاد المطلوب تصحيحه
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: التصحيح المقترح وسببه
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: مصادر عامة أو شرح إضافي (اختياري)
+    validations:
+      required: false

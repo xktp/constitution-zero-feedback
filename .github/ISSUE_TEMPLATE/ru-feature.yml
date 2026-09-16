@@ -1,0 +1,38 @@
+name: '[ru] Предложить функцию'
+description: Опишите потребность и предложите улучшение.
+title: '[Feature][ru] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Задачи и вложения видны всем. Не публикуйте пароли, токены, персональные или конфиденциальные данные. Об уязвимостях и частных вопросах сообщайте по электронной почте.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Все языки](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Публичная страница или документ и версия
+      description: Укажите публичный URL или название, раздел и известную версию документа. Удалите закрытые
+        идентификаторы и параметры запроса.
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую потребность решает предложение?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Предлагаемое улучшение
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Кому и как это поможет? (необязательно)
+    validations:
+      required: false

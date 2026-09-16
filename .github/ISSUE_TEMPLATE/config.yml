@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Choose a language
+    url: https://github.com/xktp/constitution-zero-feedback#languages
+    about: 15 language guides with direct links to four feedback forms each.
+  - name: Private or security feedback
+    url: https://github.com/xktp/constitution-zero-feedback/blob/main/SECURITY.md
+    about: Use support@constitutionzero.com for private reports or if GitHub is inaccessible.

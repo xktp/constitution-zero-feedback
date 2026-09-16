@@ -1,0 +1,38 @@
+name: '[fr] Proposer une fonctionnalité'
+description: Expliquez un besoin et proposez une amélioration.
+title: '[Feature][fr] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Les tickets et les pièces jointes sont publics. Ne publiez pas de mots de passe, de jetons, de données personnelles ou confidentielles. Signalez les vulnérabilités et envoyez les retours privés par e-mail.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Toutes les langues](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Page publique ou document et version
+      description: Indiquez une URL publique ou le titre, la section et la version du document, si vous
+        les connaissez. Retirez les identifiants privés et les paramètres de requête.
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: À quel besoin cette proposition répond-elle ?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Amélioration proposée
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Qui en bénéficierait et comment ? (facultatif)
+    validations:
+      required: false

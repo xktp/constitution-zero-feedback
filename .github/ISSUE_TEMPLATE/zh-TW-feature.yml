@@ -1,0 +1,37 @@
+name: '[zh-TW] 功能建議'
+description: 說明需求並提出改進建議。
+title: '[Feature][zh-TW] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件會公開顯示。請勿填寫密碼、權杖、個人資訊或機密資料。安全漏洞和私密回饋請改用電子郵件。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部語言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開頁面或文件及版本
+      description: 請提供公開連結，或文件名稱、章節與已知版本。移除私密識別資訊與查詢參數。
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: 這個建議要解決什麼需求？
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 建議如何改進？
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 誰會受益，以及如何受益？（選填）
+    validations:
+      required: false

@@ -1,0 +1,48 @@
+name: '[ja] アクセシビリティ・翻訳'
+description: 利用上の障壁や翻訳の問題を報告してください。
+title: '[Accessibility/Translation][ja] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue と添付ファイルは公開されます。パスワード、トークン、個人情報、機密情報を記載しないでください。セキュリティ上の脆弱性や非公開の相談はメールでお送りください。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [すべての言語](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公開ページまたは文書とバージョン
+      description: 公開 URL、または文書名・節・分かる範囲のバージョンを記載してください。非公開の識別情報やクエリパラメーターは除いてください。
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: フィードバックの種類
+      options:
+        - アクセシビリティ
+        - 翻訳
+        - 両方
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: 利用上の障壁または翻訳の問題
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する表現または利用しやすい動作
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: ブラウザー、端末、関連設定（任意）
+      description: 例：ブラウザーのバージョン、文字サイズ、キーボード、関連する支援技術。医療情報や個人情報は不要です。
+    validations:
+      required: false

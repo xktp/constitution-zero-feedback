@@ -1,0 +1,38 @@
+name: '[id] Saran fitur'
+description: Jelaskan kebutuhan dan usulkan perbaikan.
+title: '[Feature][id] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue dan lampiran bersifat publik. Jangan sertakan kata sandi, token, data pribadi, atau informasi rahasia. Kirim kerentanan keamanan dan umpan balik pribadi melalui email.
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [Semua bahasa](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: Halaman publik atau dokumen dan versi
+      description: Sertakan URL publik atau judul, bagian, dan versi dokumen jika diketahui. Hapus pengenal
+        pribadi dan parameter kueri.
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Kebutuhan apa yang ingin dipenuhi?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Usulan perbaikan
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Siapa yang terbantu dan bagaimana? (opsional)
+    validations:
+      required: false

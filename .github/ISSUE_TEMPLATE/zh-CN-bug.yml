@@ -1,0 +1,45 @@
+name: '[zh-CN] 问题报告'
+description: 描述遇到的问题和复现方法。
+title: '[Bug][zh-CN] '
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Issue 和附件会公开显示。请勿填写密码、令牌、个人信息或保密资料。安全漏洞和私密反馈请改用邮箱。
+
+        [support@constitutionzero.com](mailto:support@constitutionzero.com)
+
+        [全部语言](https://github.com/xktp/constitution-zero-feedback#languages)
+  - type: input
+    id: context
+    attributes:
+      label: 公开页面或文档及版本
+      description: 请提供公开链接，或文档名称、章节及已知版本。移除私密标识和查询参数。
+    validations:
+      required: false
+  - type: textarea
+    id: observed
+    attributes:
+      label: 实际发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 描述你的操作过程；无法复现时请说明。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 浏览器、设备及相关设置（选填）
+      description: 例如浏览器版本、字号、键盘或相关辅助技术。无需提供医疗或个人资料。
+    validations:
+      required: false
